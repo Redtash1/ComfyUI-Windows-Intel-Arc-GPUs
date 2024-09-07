@@ -108,6 +108,17 @@ Ctrl can also be replaced with Cmd instead for macOS users
 
 # Installing on Windows
 
+## INTEL GPU's
+
+Intel GPU support is available for all Intel GPUs supported by Intel's Extension for Pytorch (IPEX) with the support requirements listed in the [Installation](https://intel.github.io/intel-extension-for-pytorch/index.html#installation?platform=gpu) page. Choose your platform and method of install and follow the instructions. The steps are as follows:
+
+1. Start by installing the drivers or kernel listed or newer in the Installation page of IPEX linked above for Windows and Linux if needed.
+1. Follow the instructions to install [Intel's oneAPI Basekit](https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit-download.html) for your platform.
+1. Install the packages for IPEX using the instructions provided in the Installation page for your platform.
+1. Follow the [ComfyUI manual installation](#manual-install-windows-linux) instructions for Windows and Linux and run ComfyUI normally as described above after everything is installed.
+
+Additional discussion and help can be found [here](https://github.com/comfyanonymous/ComfyUI/discussions/476).
+
 There is a portable standalone build for Windows that should work for running on INTEL GPUs or for running on your CPU only on the [releases page](https://github.com/comfyanonymous/ComfyUI/releases).
 
 ### [Direct link to download](https://github.com/comfyanonymous/ComfyUI/releases/latest/download/ComfyUI_windows_portable_nvidia.7z)
@@ -119,18 +130,6 @@ If you have trouble extracting it, right click the file -> properties -> unblock
 #### How do I share models between another UI and ComfyUI?
 
 See the [Config file](extra_model_paths.yaml.example) to set the search paths for models. In the standalone windows build you can find this file in the ComfyUI directory. Rename this file to extra_model_paths.yaml and edit it with your favorite text editor.
-
-#### INTEL GPU's
-
-Intel GPU support is available for all Intel GPUs supported by Intel's Extension for Pytorch (IPEX) with the support requirements listed in the [Installation](https://intel.github.io/intel-extension-for-pytorch/index.html#installation?platform=gpu) page. Choose your platform and method of install and follow the instructions. The steps are as follows:
-
-1. Start by installing the drivers or kernel listed or newer in the Installation page of IPEX linked above for Windows and Linux if needed.
-1. Follow the instructions to install [Intel's oneAPI Basekit](https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit-download.html) for your platform.
-1. Install the packages for IPEX using the instructions provided in the Installation page for your platform.
-1. Follow the [ComfyUI manual installation](#manual-install-windows-linux) instructions for Windows and Linux and run ComfyUI normally as described above after everything is installed.
-
-Additional discussion and help can be found [here](https://github.com/comfyanonymous/ComfyUI/discussions/476).
-
 
 
 # Notes
