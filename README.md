@@ -1,6 +1,6 @@
 <div align="center">
 
-# ComfyUI for Windows Intel GPU's
+# ComfyUI Stand-alone for Windiws with Intel Arc GPU's
 **The most powerful and modular diffusion model GUI and backend.**
 
 
