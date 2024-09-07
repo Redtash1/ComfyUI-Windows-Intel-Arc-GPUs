@@ -1,6 +1,6 @@
 <div align="center">
 
-# ComfyUI for Intel GPU's
+# ComfyUI for Windows Intel GPU's
 **The most powerful and modular diffusion model GUI and backend.**
 
 
