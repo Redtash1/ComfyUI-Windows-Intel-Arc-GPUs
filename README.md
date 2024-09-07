@@ -1,6 +1,7 @@
 <div align="center">
 
 # ComfyUI Stand-Alone for Windows with Intel Arc GPU's
+
 **The most powerful and modular diffusion model GUI and backend.**
 
 
@@ -105,9 +106,7 @@ Workflow examples can be found on the [Examples page](https://comfyanonymous.git
 
 Ctrl can also be replaced with Cmd instead for macOS users
 
-# Installing
-
-## Windows
+# Installing on Windows
 
 There is a portable standalone build for Windows that should work for running on INTEL GPUs or for running on your CPU only on the [releases page](https://github.com/comfyanonymous/ComfyUI/releases).
 
