@@ -133,7 +133,16 @@ If you have trouble extracting it, right click the file -> properties -> unblock
 
 3. Run 3rd to Install GGUF Custom Node.bat
 
-   This will install GGUF Custom nodes. 
+   This will install GGUF Custom nodes.
+
+4. Now download Models\Checkpoints from comfyanonymous flux_text_encoders. Put these in ComfyUI\models\clip folder.
+   [clip_l.safetensors](https://huggingface.co/comfyanonymous/flux_text_encoders/blob/main/clip_l.safetensors)
+   [t5xxl_fp8_e4m3fn.safetensors](https://huggingface.co/comfyanonymous/flux_text_encoders/blob/main/t5xxl_fp8_e4m3fn.safetensors)
+
+5. Now download Unet from city96 FLUX.1-schnell-gguf. Put this in ComfyUI\models\unet folder.
+   [city96/FLUX.1-schnell-gguf](https://huggingface.co/city96/FLUX.1-schnell-gguf/blob/main/flux1-schnell-Q4_0.gguf)
+     
+   
 
 # How to Run:
 ## If you have an INTEL CPU you have to disable the IGPU in device manager under Display Adapters Intel(R) UHD Graphics 770 or ComfyUI will open but when you try to generate an image, it will fail because it will try to use CPU's built-in graphics with is called IGPU. Once you have disabled it keep window open but minimize it to remind you to re-enable it before you shutdown your computer beacause it could cause your computer to not boot the next time which would require you to start in safe mode to fix the problem.
