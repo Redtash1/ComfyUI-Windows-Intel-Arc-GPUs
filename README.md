@@ -119,17 +119,20 @@ Simply download, extract with [7-Zip](https://7-zip.org) and run. Make sure you 
 If you have trouble extracting it, right click the file -> properties -> unblock
 
 ## Run in this order:
-1. Run 1st Intel Driver Install.bat |
+1. Run 1st Intel Driver Install.bat
+
 This uninstalls all the Nvidia Drivers and installs all the Intel Drivers and Dependencies from the requirements.txt file.
 
 ![ComfyUI Run Order](Pictures/ComfyUI_Folder_Run_Order.png)
 
 2. Run 2nd Comfyul Manager Install.bat
+
 This will install ComfyUI Manager that allows you to download custom nodes and other useful things, it downloads and installs them in the correct folders automatically.
 
 ![ComfyUI Manager](Pictures/ComfyUI_Manager_Menu.png)
 
 3. Run 3rd to Install GGUF Custom Node.bat
+
 This will install GGUF Custom nodes. 
 
 # How to Run:
