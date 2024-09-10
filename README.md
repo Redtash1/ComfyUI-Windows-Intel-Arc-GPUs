@@ -126,7 +126,17 @@ This uninstalls all the Nvidia Drivers and installs all the Intel Drivers and De
 
 2. Run 2nd Comfyul Manager Install.bat
 This will install ComfyUI Manager that allows you to download custom nodes and other useful things, it downloads and installs them in the correct folders automatically.
+
 ![ComfyUI Manager](Pictures/ComfyUI_Manager_Menu.png)
+
+3. Run 3rd to Install GGUF Custom Node.bat
+This will install GGUF Custom nodes. 
+
+# How to Run:
+If you have an INTEL CPU you have to disable the IGPU in device manager under Display Adapters Intel(R) UHD Graphics 770 or ComfyUI will open but when you try to generate an image, it will fail because it will try to use CPU's built-in graphics with is called IGPU. Once you have disabled it keep window open but minimize it to remind you to re-enable it before you shutdown your computer beacause it could cause your computer to not boot the next time which would require you to start in safe mode to fix the problem.
+
+![Disable IGPU](Pictures/Disable IGPU.png)
+
 
 
 Intel GPU support is available for all Intel GPUs supported by Intel's Extension for Pytorch (IPEX) with the support requirements listed in the [Installation](https://intel.github.io/intel-extension-for-pytorch/index.html#installation?platform=gpu) page. Choose your platform and method of install and follow the instructions. The steps are as follows:
