@@ -35,7 +35,7 @@
 This ui will let you design and execute advanced stable diffusion pipelines using a graph/nodes/flowchart based interface. For some workflow examples and see what ComfyUI can do you can check out:
 ### [ComfyUI Examples](https://comfyanonymous.github.io/ComfyUI_examples/)
 
-### [Install ComfyUI On Windows With Intel GPU](#Install-for-Windows-Intel)
+## [Install ComfyUI On Windows With Intel GPU](#Install-for-Windows-Intel)
 
 ## Features
 - Nodes/graph/flowchart interface to experiment and create complex Stable Diffusion workflows without needing to code anything.
@@ -106,7 +106,7 @@ Workflow examples can be found on the [Examples page](https://comfyanonymous.git
 
 Ctrl can also be replaced with Cmd instead for macOS users
 
-# Install for Windows Intel
+# Installation for Windows Intel GPU's Only
 
 ## INTEL GPU's
 
@@ -114,11 +114,12 @@ Portable standalone build for Windows running INTEL GPUs or for running on your 
 
 ### Click Here | [Direct link to download](https://github.com/Redtash1/ComfyUI-Windows-Intel-GPUs/releases/download/v0.2.1/ComfyUI_Windows_Intel_Portable.7z)
 
-Simply download, extract with [7-Zip](https://7-zip.org) and run. Make sure you put your Stable Diffusion checkpoints/models (the huge ckpt/safetensors files) in: ComfyUI\models\checkpoints
+Once downloaded from link above make a folder that you want to extract with [7-Zip](https://7-zip.org) into, remember once you start installing stuff you can't move the folder. Make sure you put your ComfyUI checkpoints/models (the huge ckpt/safetensors files) in: ComfyUI\models\checkpoints folder.
 
 If you have trouble extracting it, right click the file -> properties -> unblock
 
 ## Run in this order:
+
 1. Run 1st Intel Driver Install.bat
 
    This uninstalls all the Nvidia Drivers and installs all the Intel Drivers and Dependencies from the requirements.txt file.
