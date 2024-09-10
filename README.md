@@ -35,7 +35,7 @@
 This ui will let you design and execute advanced stable diffusion pipelines using a graph/nodes/flowchart based interface. For some workflow examples and see what ComfyUI can do you can check out:
 ### [ComfyUI Examples](https://comfyanonymous.github.io/ComfyUI_examples/)
 
-### [Installing ComfyUI](#installing)
+### [Installing ComfyUI](Install-on-Windows)
 
 ## Features
 - Nodes/graph/flowchart interface to experiment and create complex Stable Diffusion workflows without needing to code anything.
@@ -106,7 +106,7 @@ Workflow examples can be found on the [Examples page](https://comfyanonymous.git
 
 Ctrl can also be replaced with Cmd instead for macOS users
 
-# Install on Windows
+# Install-on-Windows
 
 ## INTEL GPU's
 
@@ -119,7 +119,7 @@ Intel GPU support is available for all Intel GPUs supported by Intel's Extension
 
 Additional discussion and help can be found [here](https://github.com/comfyanonymous/ComfyUI/discussions/476).
 
-There is a portable standalone build for Windows that should work for running on INTEL GPUs or for running on your CPU only on the [releases page](https://github.com/comfyanonymous/ComfyUI/releases).
+Portable standalone build for Windows that should work for running on INTEL GPUs or for running on your CPU only on the [releases page](https://github.com/Redtash1/ComfyUI-Windows-Intel-GPUs/releases/tag/v0.2.1).
 
 ### [Direct link to download](https://github.com/Redtash1/ComfyUI-Windows-Intel-GPUs/releases/download/v0.2.1/ComfyUI_Windows_Intel_Portable.7z)
 
