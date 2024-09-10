@@ -138,14 +138,12 @@ If you have trouble extracting it, right click the file -> properties -> unblock
 
 4. Now download Models\Checkpoints from comfyanonymous, Flux text encoders [clip_l.safetensors and t5xxl_fp8_e4m3fn.safetensors](https://huggingface.co/comfyanonymous/flux_text_encoders/tree/main). Put these in ComfyUI\models\clip  folder.
 
-![image](https://github.com/user-attachments/assets/84b88954-a750-4d5e-b886-4f866f505ea3)
-
+![image](Pictures/Clips.png)
 
 6. Now download Unet from [city96/FLUX.1-schnell-gguf](https://huggingface.co/city96/FLUX.1-schnell-gguf/blob/main/flux1-schnell-Q4_0.gguf). Put this in ComfyUI\models\unet  folder.
    
-     
+![image](Pictures/GGUF.png) 
    
-
 # How to Run:
 ## If you have an INTEL CPU you have to disable the IGPU in device manager under Display Adapters Intel(R) UHD Graphics 770 or ComfyUI will open but when you try to generate an image, it will fail because it will try to use CPU's built-in graphics with is called IGPU. Once you have disabled it keep window open but minimize it to remind you to re-enable it before you shutdown your computer beacause it could cause your computer to not boot the next time which would require you to start in safe mode to fix the problem.
 
