@@ -110,11 +110,11 @@ Ctrl can also be replaced with Cmd instead for macOS users
 
 ## INTEL GPU's
 
-Portable standalone build for Windows running INTEL GPUs or for running on your CPU only on the [releases page](https://github.com/Redtash1/ComfyUI-Windows-Intel-GPUs/releases/tag/v0.2.1).
+Portable standalone build for Windows running INTEL GPUs Only or for running on your CPU only available on the [releases page](https://github.com/Redtash1/ComfyUI-Windows-Intel-GPUs/releases/tag/v0.2.1) or Direct Download Link Below.
 
 ### Click Here | [Direct link to download](https://github.com/Redtash1/ComfyUI-Windows-Intel-GPUs/releases/download/v0.2.1/ComfyUI_Windows_Intel_Portable.7z)
 
-Once downloaded from link above make a folder that you want to extract with [7-Zip](https://7-zip.org) into, remember once you start installing stuff you can't move the folder. Make sure you put your ComfyUI checkpoints/models (the huge ckpt/safetensors files) in: ComfyUI\models\checkpoints folder.
+Once downloaded from link above make a folder that you want to extract it into with [7-Zip](https://7-zip.org), remember once you start installing stuff you can't move the folder. Make sure you put your ComfyUI checkpoints/models (the huge ckpt/safetensors files) in: ComfyUI\models\checkpoints folder.
 
 If you have trouble extracting it, right click the file -> properties -> unblock
 
@@ -136,9 +136,12 @@ If you have trouble extracting it, right click the file -> properties -> unblock
 
    This will install GGUF Custom nodes.
 
-4. Now download Models\Checkpoints from comfyanonymous, Flux text encoders [clip_l.safetensors and t5xxl_fp8_e4m3fn.safetensors](https://huggingface.co/comfyanonymous/flux_text_encoders/tree/main). Put these in ComfyUI\models\clip folder.
+4. Now download Models\Checkpoints from comfyanonymous, Flux text encoders [clip_l.safetensors and t5xxl_fp8_e4m3fn.safetensors](https://huggingface.co/comfyanonymous/flux_text_encoders/tree/main). Put these in ComfyUI\models\clip  folder.
 
-5. Now download Unet from [city96/FLUX.1-schnell-gguf](https://huggingface.co/city96/FLUX.1-schnell-gguf/blob/main/flux1-schnell-Q4_0.gguf). Put this in ComfyUI\models\unet folder.
+![image](https://github.com/user-attachments/assets/84b88954-a750-4d5e-b886-4f866f505ea3)
+
+
+6. Now download Unet from [city96/FLUX.1-schnell-gguf](https://huggingface.co/city96/FLUX.1-schnell-gguf/blob/main/flux1-schnell-Q4_0.gguf). Put this in ComfyUI\models\unet  folder.
    
      
    
