@@ -136,7 +136,7 @@ If you have trouble extracting it, right click the file -> properties -> unblock
    This will install GGUF Custom nodes.
 
 4. Now download Models\Checkpoints from comfyanonymous flux_text_encoders. Put these in ComfyUI\models\clip folder.
-   clip_l.safetensors and t5xxl_fp8_e4m3fn.safetensors [(https://huggingface.co/comfyanonymous/flux_text_encoders/tree/main)]
+   clip_l.safetensors and t5xxl_fp8_e4m3fn.safetensors https://huggingface.co/comfyanonymous/flux_text_encoders/tree/main
 
 5. Now download Unet from city96 FLUX.1-schnell-gguf. Put this in ComfyUI\models\unet folder.
    [city96/FLUX.1-schnell-gguf](https://huggingface.co/city96/FLUX.1-schnell-gguf/blob/main/flux1-schnell-Q4_0.gguf)
