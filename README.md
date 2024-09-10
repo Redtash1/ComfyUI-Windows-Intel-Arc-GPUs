@@ -106,9 +106,17 @@ Workflow examples can be found on the [Examples page](https://comfyanonymous.git
 
 Ctrl can also be replaced with Cmd instead for macOS users
 
-# Install-on-Windows
+# Installation for Windows Only
 
 ## INTEL GPU's
+
+Portable standalone build for Windows running INTEL GPUs or for running on your CPU only on the [releases page](https://github.com/Redtash1/ComfyUI-Windows-Intel-GPUs/releases/tag/v0.2.1).
+
+### Click Here [Direct link to download](https://github.com/Redtash1/ComfyUI-Windows-Intel-GPUs/releases/download/v0.2.1/ComfyUI_Windows_Intel_Portable.7z)
+
+Simply download, extract with [7-Zip](https://7-zip.org) and run. Make sure you put your Stable Diffusion checkpoints/models (the huge ckpt/safetensors files) in: ComfyUI\models\checkpoints
+
+If you have trouble extracting it, right click the file -> properties -> unblock
 
 Intel GPU support is available for all Intel GPUs supported by Intel's Extension for Pytorch (IPEX) with the support requirements listed in the [Installation](https://intel.github.io/intel-extension-for-pytorch/index.html#installation?platform=gpu) page. Choose your platform and method of install and follow the instructions. The steps are as follows:
 
@@ -119,13 +127,6 @@ Intel GPU support is available for all Intel GPUs supported by Intel's Extension
 
 Additional discussion and help can be found [here](https://github.com/comfyanonymous/ComfyUI/discussions/476).
 
-Portable standalone build for Windows that should work for running on INTEL GPUs or for running on your CPU only on the [releases page](https://github.com/Redtash1/ComfyUI-Windows-Intel-GPUs/releases/tag/v0.2.1).
-
-### [Direct link to download](https://github.com/Redtash1/ComfyUI-Windows-Intel-GPUs/releases/download/v0.2.1/ComfyUI_Windows_Intel_Portable.7z)
-
-Simply download, extract with [7-Zip](https://7-zip.org) and run. Make sure you put your Stable Diffusion checkpoints/models (the huge ckpt/safetensors files) in: ComfyUI\models\checkpoints
-
-If you have trouble extracting it, right click the file -> properties -> unblock
 
 #### How do I share models between another UI and ComfyUI?
 
