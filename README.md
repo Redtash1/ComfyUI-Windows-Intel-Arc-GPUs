@@ -1,6 +1,6 @@
 <div align="center">
 
-# ComfyUI Stand-Alone for Windows with Intel Arc GPU's Only
+###### ComfyUI Stand-Alone for Windows with Intel Arc GPU's Only
 
 **The most powerful and modular diffusion model GUI and backend.**
 
@@ -110,11 +110,11 @@ Ctrl can also be replaced with Cmd instead for macOS users
 
 ## INTEL GPU's
 
-Portable standalone build for Windows running INTEL GPUs Only or for running on your CPU only available on the [releases page](https://github.com/Redtash1/ComfyUI-Windows-Intel-GPUs/releases/tag/v0.2.1) or Direct Download Link Below.
+Portable standalone build for Windows with INTEL GPUs Only or on your CPU only available on the [releases page](https://github.com/Redtash1/ComfyUI-Windows-Intel-GPUs/releases/tag/v0.2.1) or Direct Download Link Below.
 
 ### Click Here | [Direct link to download](https://github.com/Redtash1/ComfyUI-Windows-Intel-GPUs/releases/download/v0.2.1/ComfyUI_Windows_Intel_Portable.7z)
 
-Once downloaded from link above make a folder that you want to extract it into with [7-Zip](https://7-zip.org), remember once you start installing stuff you can't move the folder. Make sure you put your ComfyUI checkpoints/models (the huge ckpt/safetensors files) in: ComfyUI\models\checkpoints folder.
+Once downloaded from link above make a folder where you want to extract it into with [7-Zip](https://7-zip.org), remember once you start installing stuff you can't move the folder. Make sure you put your ComfyUI checkpoints/models (the huge ckpt/safetensors files) in: ComfyUI\models\checkpoints folder.
 
 If you have trouble extracting it, right click the file -> properties -> unblock
 
