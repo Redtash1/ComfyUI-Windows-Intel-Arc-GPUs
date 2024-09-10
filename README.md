@@ -145,11 +145,11 @@ If you have trouble extracting it, right click the file -> properties -> unblock
 ![image](Pictures/GGUF.png) 
    
 # How to Run:
-## If you have an INTEL CPU you have to disable the IGPU in device manager under Display Adapters Intel(R) UHD Graphics 770 or ComfyUI will open but when you try to generate an image, it will fail because it will try to use CPU's built-in graphics with is called IGPU. Once you have disabled it keep window open but minimize it to remind you to re-enable it before you shutdown your computer beacause it could cause your computer to not boot the next time which would require you to start in safe mode to fix the problem.
+## If you have an INTEL CPU you have to disable the IGPU in device manager under Display Adapters Intel(R) UHD Graphics 770 or ComfyUI will open but when you try to generate an image, it will fail because it will try to use CPU's built-in graphics with is called IGPU. Once you have disabled it keep window open but minimize it to remind you to re-enable it before you shutdown your computer because it could cause your computer to not boot the next time which would require you to start in safe mode to fix the problem.
 
 ![Disable IGPU](Pictures/Disable_IGPU.png)
 
-If you have any problems join this Discord Channel for help, [ComfyUI for Intel Arc usingIPEX](https://discord.com/channels/554824368740630529/1193952640225267802).
+If you have any problems join this Discord Channel for help, [ComfyUI for Intel Arc using IPEX](https://discord.com/channels/554824368740630529/1193952640225267802).
 
 
 
