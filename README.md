@@ -121,7 +121,7 @@ If you have trouble extracting it, right click the file -> properties -> unblock
 ## Run in this order:
 1. Run 1st Intel Driver Install.bat
 
-This uninstalls all the Nvidia Drivers and installs all the Intel Drivers and Dependencies from the requirements.txt file.
+   This uninstalls all the Nvidia Drivers and installs all the Intel Drivers and Dependencies from the requirements.txt file.
 
 ![ComfyUI Run Order](Pictures/ComfyUI_Folder_Run_Order.png)
 
