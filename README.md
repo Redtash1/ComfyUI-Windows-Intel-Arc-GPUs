@@ -152,7 +152,7 @@ If you have trouble extracting it, right click the file -> properties -> unblock
 If you have any problems join this Discord Channel for help, [ComfyUI for Intel Arc using IPEX](https://discord.com/channels/554824368740630529/1193952640225267802).
 
 
-
+|
 
 Intel GPU support is available for all Intel GPUs supported by Intel's Extension for Pytorch (IPEX) with the support requirements listed in the [Installation](https://intel.github.io/intel-extension-for-pytorch/index.html#installation?platform=gpu) page. Choose your platform and method of install and follow the instructions. The steps are as follows:
 
