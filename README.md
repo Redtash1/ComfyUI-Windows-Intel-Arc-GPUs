@@ -124,6 +124,10 @@ This uninstalls all the Nvidia Drivers and installs all the Intel Drivers and De
 
 ![ComfyUI Run Order](Pictures/ComfyUI_Folder_Run_Order.png)
 
+2. Run 2nd Comfyul Manager Install.bat
+This will install ComfyUI Manager that allows you to download custom nodes and other useful things, it downloads and installs them in the correct folders automatically.
+![ComfyUI Manager](Pictures/ComfyUI_Manager_Menu.png)
+
 
 Intel GPU support is available for all Intel GPUs supported by Intel's Extension for Pytorch (IPEX) with the support requirements listed in the [Installation](https://intel.github.io/intel-extension-for-pytorch/index.html#installation?platform=gpu) page. Choose your platform and method of install and follow the instructions. The steps are as follows:
 
