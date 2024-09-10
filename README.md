@@ -140,7 +140,7 @@ If you have trouble extracting it, right click the file -> properties -> unblock
 
 ![image](Pictures/Clips.png)
 
-6. Now download GGUF from [city96/FLUX.1-schnell-gguf](https://huggingface.co/city96/FLUX.1-schnell-gguf/blob/main/flux1-schnell-Q4_0.gguf). Put this in ComfyUI\models\unet  folder.
+6. Now download GGUF from [city96/FLUX.1-schnell-gguf](https://huggingface.co/city96/FLUX.1-schnell-gguf/tree/main). Put this in ComfyUI\models\unet  folder.
    
 ![image](Pictures/GGUF.png) 
    
