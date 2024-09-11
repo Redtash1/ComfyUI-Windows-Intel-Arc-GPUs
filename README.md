@@ -143,6 +143,11 @@ If you have trouble extracting it, right click the file -> properties -> unblock
 6. Now download GGUF from [city96/FLUX.1-schnell-gguf](https://huggingface.co/city96/FLUX.1-schnell-gguf/tree/main). Put this in ComfyUI\models\unet  folder.
    
 ![image](Pictures/GGUF.png) 
+
+7. How download Vae from [Black Forest Labs](https://huggingface.co/black-forest-labs/FLUX.1-schnell/tree/main). Put this in ComfyUI\models\vae folder.
+
+![image](/Pictures/Vae.png)
+
    
 # How to Run:
 ## If you have an INTEL CPU you have to disable the IGPU in device manager under Display Adapters Intel(R) UHD Graphics 770 or ComfyUI will open but when you try to generate an image, it will fail because it will try to use CPU's built-in graphics with is called IGPU. Once you have disabled it keep window open but minimize it to remind you to re-enable it before you shutdown your computer because it could cause your computer to not boot the next time which would require you to start in safe mode to fix the problem.
