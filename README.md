@@ -112,7 +112,7 @@ Ctrl can also be replaced with Cmd instead for macOS users
 
 Portable standalone build for Windows with INTEL GPUs Only or on your CPU only available on the [releases page](https://github.com/Redtash1/ComfyUI-Windows-Intel-GPUs/releases/download/v0.2.1/ComfyUI_Windows_Intel_Portable.zip) or Direct Download Link Below.
 
-### Click Here | [Direct link to download Windows Intel GPU Only Portable](https://github.com/Redtash1/ComfyUI-Windows-Intel-GPUs/releases/download/v0.2.1/ComfyUI_Windows_Intel_Portable.7z)
+### Click Here | [Direct link to download Windows Intel GPU Only Portable](https://github.com/Redtash1/ComfyUI-Windows-Intel-GPUs/releases/download/v0.2.1/ComfyUI_Windows_Intel_Portable.zip)
 
 Once downloaded from link above make a folder where you want to extract it into with [7-Zip](https://7-zip.org), remember once you start installing stuff you can't move the folder. Make sure you put your ComfyUI checkpoints/models (the huge ckpt/safetensors files) in: ComfyUI\models\checkpoints folder.
 
