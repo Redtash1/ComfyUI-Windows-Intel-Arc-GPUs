@@ -124,7 +124,7 @@ If you have trouble extracting it, right click the file -> properties -> unblock
 
    This uninstalls all the Nvidia Drivers and installs all the Intel Drivers and Dependencies from the requirements.txt file.
 
-![ComfyUI Run Order](Pictures/ComfyUI_Folder_Run350x363.png)
+![ComfyUI Run Order](Pictures/ComfyUI_Folder_Run_Order350x363.png)
 
 2. Run 2nd Comfyul Manager Install.bat
 
