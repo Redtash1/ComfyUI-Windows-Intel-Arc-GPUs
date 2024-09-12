@@ -138,7 +138,7 @@ If you have trouble extracting it, right click the file -> properties -> unblock
 
 4. Now download Models\Checkpoints from comfyanonymous, Flux text encoders [clip_l.safetensors and t5xxl_fp8_e4m3fn.safetensors](https://huggingface.co/comfyanonymous/flux_text_encoders/tree/main). Put these in ComfyUI\models\clip  folder.
 
-![image](Pictures/Clips500x415.png)
+![image](Pictures/clips475x394.png)
 
 6. Now download GGUF from [city96/FLUX.1-schnell-gguf](https://huggingface.co/city96/FLUX.1-schnell-gguf/tree/main). Put this in ComfyUI\models\unet  folder.
    
