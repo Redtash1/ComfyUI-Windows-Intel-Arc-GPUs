@@ -120,6 +120,10 @@ If you have trouble extracting it, right click the file -> properties -> unblock
 
 ## Run in this order:
 
+### DISABLE INTEL IGPU BEFORE INSTALLING
+
+![Disable IGPU](Pictures/Disable_IGPU400x311.png)
+
 1. Run 1st Intel Driver Install.bat
 
    This uninstalls all the Nvidia Drivers and installs all the Intel Drivers and Dependencies from the requirements.txt file.
