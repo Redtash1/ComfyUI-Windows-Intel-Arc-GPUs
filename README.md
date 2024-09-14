@@ -106,7 +106,7 @@ Workflow examples can be found on the [Examples page](https://comfyanonymous.git
 
 Ctrl can also be replaced with Cmd instead for macOS users
 
-# Installation for Windows Intel GPUs Only
+# Installation On Windows With Intel GPUs Only
 
 ## INTEL GPU's
 
