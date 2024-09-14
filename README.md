@@ -148,7 +148,7 @@ If you have trouble extracting it, right click the file -> properties -> unblock
    
 ![image](Pictures/GGUF400x374.png) 
 
-7. How download Vae from [Black Forest Labs](https://huggingface.co/black-forest-labs/FLUX.1-schnell/tree/main). Put this in ComfyUI\models\vae folder.
+7. Now download Vae from [Black Forest Labs](https://huggingface.co/black-forest-labs/FLUX.1-schnell/tree/main). Put this in ComfyUI\models\vae folder.
 
 ![image](Pictures/Vae400x332.png)
 
