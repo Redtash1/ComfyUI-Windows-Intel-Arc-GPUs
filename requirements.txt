@@ -14,7 +14,7 @@ numpy==1.26.4
 scipy
 tqdm
 psutil
-intel_extension_for_pytorch @ https://intel-extension-for-pytorch.s3.amazonaws.com/ipex_stable/xpu/intel_extension_for_pytorch-2.1.40%2Bxpu-cp310-cp310-win_amd64.whl																																													 
+intel_extension_for_pytorch @ https://github.com/Nuullll/intel-extension-for-pytorch/releases/download/v2.1.10%2Bxpu/intel_extension_for_pytorch-2.1.10+xpu-cp310-cp310-win_amd64.whl																																													 
 
 #non essential dependencies:
 kornia>=0.7.1
