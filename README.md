@@ -158,7 +158,7 @@ If you have trouble extracting it, right click the file -> properties -> unblock
 
 ![Disable IGPU](Pictures/Disable_IGPU400x311.png)
 
-Now pick if you want to run ComfyUI in High VRAM, Low VRAM or CPU only mode and double click to start ComfyUI
+Now pick if you want to run ComfyUI in Normal, Low VRAM or CPU only mode and double click to start ComfyUI.
 
 ![Run](Pictures/ComfyUI_Folder_Run350x363.png)
 
