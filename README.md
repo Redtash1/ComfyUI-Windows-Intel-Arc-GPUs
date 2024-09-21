@@ -132,7 +132,7 @@ If you have trouble extracting it, right click the file -> properties -> unblock
 
 2. Run 2nd Comfyul Manager Install.bat
 
-   This will install ComfyUI Manager that allows you to download custom nodes and other useful things, it downloads and installs them in the correct folders automatically.
+     You need to have Git installed to install ComfyUI Manager and GGUF Custom Nodes, so if you don't, Click here 👉 [Git](https://git-scm.com) to download, to install Git double click Git.exe and just keep clicking next until it's installed.  Next double click Run 2nd ComfyUi Manager Install.bat to install ComfyUI Manager, this allows you to download custom nodes and other useful things, it downloads and installs them in the correct folders automatically..
 
 ![ComfyUI Manager](Pictures/ComfyUI_Manager_Menu.png)
 
