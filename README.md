@@ -162,7 +162,7 @@ Now pick if you want to run ComfyUI in Normal, Low VRAM or CPU only mode and dou
 
 ![Run](Pictures/ComfyUI_Folder_Run350x363.png)
 
-![Comfy Manager](https://youtu.be/sjB3JCWBiWc)
+![Comfy Manager](https://www.youtube.com/watch?v=sjB3JCWBiWc)
 
 If you have any problems join this Discord Channel for help, Intel Insiders Community [ComfyUI for Intel Arc using IPEX](https://discord.com/channels/554824368740630529/1193952640225267802).
 
