@@ -118,7 +118,9 @@ You need to have Git installed, so if you don't, Click here 👉 [Git](https://g
 
 Once downloaded ComfyUI from link above double click and choose where you would like to unzip ComfyUI to, remember once you start installing stuff you can't move the folder. 
 
-Now download Models\Checkpoints from comfyanonymous, Flux text encoders [clip_l.safetensors and t5xxl_fp8_e4m3fn.safetensors](https://huggingface.co/comfyanonymous/flux_text_encoders/tree/main). Put these in ComfyUI\models\clip
+Now download Models\Checkpoints [Juggernaut XL](https://civitai.com/models/133005/juggernaut-xl). Put this in ComfyUi\models\checkpoints
+
+Now download from comfyanonymous, Flux text encoders [clip_l.safetensors and t5xxl_fp8_e4m3fn.safetensors](https://huggingface.co/comfyanonymous/flux_text_encoders/tree/main). Put these in ComfyUI\models\clip
 
 ![image](Pictures/Clips400x332.png)
 
@@ -133,7 +135,7 @@ Now download Vae from [Black Forest Labs](https://huggingface.co/black-forest-la
 
 ## Run in this order:
 
-### DISABLE INTEL IGPU BEFORE INSTALLING
+### DISABLE INTEL IGPU BEFORE INSTALLING ANYTHING
 
 ![Disable IGPU](Pictures/Disable_IGPU400x311.png)
 
@@ -141,7 +143,7 @@ Now download Vae from [Black Forest Labs](https://huggingface.co/black-forest-la
 
    This uninstalls all the Nvidia Drivers and installs all the Intel Drivers and Dependencies from the requirements.txt file.
 
-![ComfyUI Run Order](Pictures/Run1st Intel Driver Install.png)
+![ComfyUI Run Order](Pictures/Run_1st_Intel_Driver_Install.png)
 
 
 
@@ -153,11 +155,44 @@ Now download Vae from [Black Forest Labs](https://huggingface.co/black-forest-la
 
 Now pick if you want to run ComfyUI in Normal, Low VRAM or CPU only mode and double click to start ComfyUI.
 
-![Run](Pictures/ComfyUI_Folder_Run350x363.png)
+![Run](Pictures/Launch_ComfyUI.png)
+
+I Pre-Installed:
+
+ComfyUI Manager
+
+ComfyUI Flux GGUF
+
+pythongosssss/ComfyUI-Custom-Scripts
+
+After you have launched ComfyUI, Drag & Drop Comfy GGUf 4.json from ComfyUI folder onto open browser page to load Flux GGUF workload.
+
+![Drag_and_Drop](Pictures/Drag_&_Drop_GGUF.png)
+
+YOU WILL GET A POPUP WARNING IN RED THAT UNETLOADERGGUF FAILED TO LOAD.
+
+![GGUF_Error](Pictures/GGUF_Error.png)
+
+TO EASILY FIX THIS, OPEN COMFYUI MANAGER
+
+![ComfyUI_Mamanger_Button](Pictures/ComfyUI_Manager_Button.png)
+
+THEN CLICK CUSTOM NODES MANAGER
+
+![Custom_Nodes_Manager_Button](Picture/Custom_Nodes_Manager_Button.png)
+
+
+NOW  GO TO TOP LEFT CORNER, CLICK FILTER AND CHANGE TO INSTALLED, THEN GO DOWN TO COMFYUI-GGUF AND CLICK ON TRY FIX
+
+![GGUF_Filter_Installed_ComfyUI_GGUF_Try_Fix](Pictures/GGUF_Filter_Installed_ComfyUI_GGUF_Try_Fix.png)
+
+AND FINALLY CLICK ON RESTART AND IT WILL RESTART COMFYUI AND YOU WILL BE GOOD TO START USING COMFYUI.
+
+![GGUF_Click_Restart](Pictures/GGUF_Click_Restart.png)
 
 
 
-If you have any problems join this Discord Channel for help, Intel Insiders Community [ComfyUI for Intel Arc using IPEX](https://discord.com/channels/554824368740630529/1193952640225267802).
+If you have any problems join this Discord Channel for help, Intel Insiders Community [ComfyUI for Intel Arc using IPEX](https://discord.gg/intel).
 
 
 |
