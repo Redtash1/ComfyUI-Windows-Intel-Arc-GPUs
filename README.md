@@ -132,7 +132,7 @@ If you have trouble extracting it, right click the file -> properties -> unblock
 
 2. Run 2nd Comfyul Manager Install.bat
 
-     You need to have Git installed to install ComfyUI Manager and GGUF Custom Nodes, so if you don't, Click here 👉 [Git](https://git-scm.com) to download, to install Git double click Git.exe and just keep clicking next until it's installed.  Next double click Run 2nd ComfyUi Manager Install.bat to install ComfyUI Manager, this allows you to download custom nodes and other useful things, it downloads and installs them in the correct folders automatically..
+     You need to have Git installed to be able to install ComfyUI Manager and GGUF Custom Nodes, so if you don't, Click here 👉 [Git](https://git-scm.com) to download, to install Git double click Git.exe and just keep clicking next until it's installed.  Next double click Run 2nd ComfyUi Manager Install.bat to install ComfyUI Manager, this allows you to download custom nodes and other useful things, it downloads and installs them in the correct folders automatically..
 
 ![ComfyUI Manager](Pictures/ComfyUI_Manager_Menu.png)
 
@@ -154,7 +154,7 @@ If you have trouble extracting it, right click the file -> properties -> unblock
 
    
 # How to Run:
-## If you have an INTEL CPU you have to disable the IGPU in device manager under Display Adapters Intel(R) UHD Graphics 770 or ComfyUI will open but when you try to generate an image, it will fail because it will try to use CPU's built-in graphics with is called IGPU. Once you have disabled it, keep Device Manager window open but minimize it to taskbar to remind you to re-enable it before you shutdown your computer. If disabling IGPU causes display problems re-enable it after you start ComfyUI.
+## If you have an INTEL CPU you have to disable the IGPU in device manager under Display Adapters Intel(R) UHD Graphics 770 or ComfyUI will open but when you try to generate an image, it will fail because it will try to use the CPU's built-in graphics with is called IGPU. Once you have disabled it, keep Device Manager window open but minimize it to taskbar to remind you to re-enable it before you shutdown your computer. If disabling IGPU causes display problems re-enable it after you start ComfyUI.
 
 ![Disable IGPU](Pictures/Disable_IGPU400x311.png)
 
