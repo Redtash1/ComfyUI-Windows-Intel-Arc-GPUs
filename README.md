@@ -116,7 +116,7 @@ Portable standalone build for Windows with INTEL GPUs Only or on your CPU only a
 
 You need to have Git installed, so if you don't, Click here 👉 [Git](https://git-scm.com) to download. To install Git double click Git.exe and just keep clicking next until it's installed.
 
-Once downloaded from link above double click and choose where you would like to unzip ComfyUI to, remember once you start installing stuff you can't move the folder. 
+Once downloaded ComfyUI from link above double click and choose where you would like to unzip ComfyUI to, remember once you start installing stuff you can't move the folder. 
 
 Now download Models\Checkpoints from comfyanonymous, Flux text encoders [clip_l.safetensors and t5xxl_fp8_e4m3fn.safetensors](https://huggingface.co/comfyanonymous/flux_text_encoders/tree/main). Put these in ComfyUI\models\clip
 
@@ -141,7 +141,7 @@ Now download Vae from [Black Forest Labs](https://huggingface.co/black-forest-la
 
    This uninstalls all the Nvidia Drivers and installs all the Intel Drivers and Dependencies from the requirements.txt file.
 
-![ComfyUI Run Order](Pictures/ComfyUI_Folder_Run_Order350x363.png)
+![ComfyUI Run Order](Pictures/Run1st Intel Driver Install.png)
 
 
 
