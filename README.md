@@ -114,9 +114,22 @@ Portable standalone build for Windows with INTEL GPUs Only or on your CPU only a
 
 ### Click Here 👉 [Direct link to download Windows Intel GPU Only Portable](https://github.com/Redtash1/ComfyUI-Windows-Intel-GPUs/releases/download/v0.2.1/ComfyUI_Windows_Intel_Portable.zip)
 
-Once downloaded from link above make a folder where you want to extract it into with [7-Zip](https://7-zip.org), remember once you start installing stuff you can't move the folder. Make sure you put your ComfyUI checkpoints/models (the huge ckpt/safetensors files) in: ComfyUI\models\checkpoints folder.
+You need to have Git installed, so if you don't, Click here 👉 [Git](https://git-scm.com) to download. To install Git double click Git.exe and just keep clicking next until it's installed.
 
-If you have trouble extracting it, right click the file -> properties -> unblock
+Once downloaded from link above double click and choose where you would like to unzip ComfyUI to, remember once you start installing stuff you can't move the folder. 
+
+Now download Models\Checkpoints from comfyanonymous, Flux text encoders [clip_l.safetensors and t5xxl_fp8_e4m3fn.safetensors](https://huggingface.co/comfyanonymous/flux_text_encoders/tree/main). Put these in ComfyUI\models\clip
+
+![image](Pictures/Clips400x332.png)
+
+Now download GGUF from [city96/FLUX.1-schnell-gguf](https://huggingface.co/city96/FLUX.1-schnell-gguf/tree/main). Put this in ComfyUI\models\unet
+   
+![image](Pictures/GGUF400x374.png) 
+
+Now download Vae from [Black Forest Labs](https://huggingface.co/black-forest-labs/FLUX.1-schnell/tree/main). Put this in ComfyUI\models\vae
+
+![image](Pictures/Vae400x332.png)
+
 
 ## Run in this order:
 
@@ -130,27 +143,7 @@ If you have trouble extracting it, right click the file -> properties -> unblock
 
 ![ComfyUI Run Order](Pictures/ComfyUI_Folder_Run_Order350x363.png)
 
-2. Run 2nd Comfyul Manager Install.bat
 
-     You need to have Git installed to be able to install ComfyUI Manager and GGUF Custom Nodes, so if you don't, Click here 👉 [Git](https://git-scm.com) to download, to install Git double click Git.exe and just keep clicking next until it's installed.  Next double click Run 2nd ComfyUi Manager Install.bat to install ComfyUI Manager, this allows you to download custom nodes and other useful things, it downloads and installs them in the correct folders automatically..
-
-![ComfyUI Manager](Pictures/ComfyUI_Manager_Menu.png)
-
-3. Run 3rd to Install GGUF Custom Node.bat
-
-   This will install GGUF Custom nodes.
-
-4. Now download Models\Checkpoints from comfyanonymous, Flux text encoders [clip_l.safetensors and t5xxl_fp8_e4m3fn.safetensors](https://huggingface.co/comfyanonymous/flux_text_encoders/tree/main). Put these in ComfyUI\models\clip  folder.
-
-![image](Pictures/Clips400x332.png)
-
-6. Now download GGUF from [city96/FLUX.1-schnell-gguf](https://huggingface.co/city96/FLUX.1-schnell-gguf/tree/main). Put this in ComfyUI\models\unet  folder.
-   
-![image](Pictures/GGUF400x374.png) 
-
-7. Now download Vae from [Black Forest Labs](https://huggingface.co/black-forest-labs/FLUX.1-schnell/tree/main). Put this in ComfyUI\models\vae folder.
-
-![image](Pictures/Vae400x332.png)
 
    
 # How to Run:
