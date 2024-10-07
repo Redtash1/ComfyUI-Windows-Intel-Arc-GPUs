@@ -112,7 +112,7 @@ Ctrl can also be replaced with Cmd instead for macOS users
 
 Portable standalone build for Windows with INTEL GPUs Only or on your CPU only available on the [releases page](https://github.com/Redtash1/ComfyUI-Windows-Intel-GPUs/releases/tag/v0.2.1) or Direct Download Link Below.
 
-### Click Here 👉 [Direct link to download Windows Intel GPU Only Portable](https://github.com/Redtash1/ComfyUI-Windows-Intel-GPUs/releases/download/v0.2.1/ComfyUI_Windows_Intel_Portable.zip)
+### Click Here 👉 [Direct link to download ComfyUI Windows Intel GPU Only Portable](https://github.com/Redtash1/ComfyUI-Windows-Intel-GPUs/releases/download/v0.2.1/ComfyUI_Windows_Intel_Portable.zip)
 
 You need to have Git installed, so if you don't, Click here 👉 [Git](https://git-scm.com) to download. To install Git double click Git.exe and just keep clicking next until it's installed.
 
