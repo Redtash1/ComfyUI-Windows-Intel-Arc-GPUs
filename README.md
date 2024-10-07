@@ -165,7 +165,7 @@ ComfyUI Flux GGUF
 
 pythongosssss/ComfyUI-Custom-Scripts
 
-After you have launched ComfyUI, Drag & Drop Comfy GGUf 4.json from ComfyUI folder onto open browser page to load Flux GGUF workload.
+After you have launched ComfyUI, Drag & Drop Comfy Flux GGUf 4.json from ComfyUI folder onto open browser page to load Flux GGUF workload.
 
 ![Drag_and_Drop](Pictures/Drag_&_Drop_GGUF.png)
 
