@@ -114,7 +114,7 @@ Portable standalone build for Windows with INTEL GPUs Only or on your CPU only a
 
 ### Click Here 👉 [Direct link to download ComfyUI Windows Intel GPU Only Portable](https://github.com/Redtash1/ComfyUI-Windows-Intel-GPUs/releases/download/v0.2.1/ComfyUI_Windows_Intel_Portable.zip)
 
-You need to have Git installed, so if you don't, Click here 👉 [Git](https://git-scm.com) to download. To install Git double click Git.exe and just keep clicking next until it's installed.
+You need to have Git installed, so if you don't already have Git installed, Click here 👉 [Git](https://git-scm.com) to download. To install Git double click Git.exe and just keep clicking next until it's installed.
 
 Once downloaded ComfyUI from link above double click and choose where you would like to unzip ComfyUI to, remember once you start installing stuff you can't move the folder. 
 
