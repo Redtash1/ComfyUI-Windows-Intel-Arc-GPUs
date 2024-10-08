@@ -155,7 +155,7 @@ Now download Vae from [Black Forest Labs](https://huggingface.co/black-forest-la
 
 1. Run 1st Intel Driver Install.bat
 
-   This uninstalls all the Nvidia Drivers and installs all the Intel Drivers and Dependencies from the requirements.txt file.
+   This installs all the Intel Drivers and dependencies from the requirements.txt file.
 
 ![ComfyUI Run Order](Pictures/Run_1st_Intel_Driver_Install.png)
 
