@@ -21,3 +21,4 @@ web_custom_versions/
 
 /custom_nodes/ComfyUI-GGUF
 /custom_nodes/ComfyUI-Manager
+/custom_nodes/ComfyUI-Custom-Scripts
