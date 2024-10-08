@@ -18,6 +18,4 @@ venv/
 *.log
 web_custom_versions/
 .DS_Store
-custom_nodes/ComfyUI-Custom-Scripts/
-custom_nodes/ComfyUI-GGUF/
-custom_nodes/ComfyUI-Manager/
+
