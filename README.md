@@ -1,6 +1,16 @@
 <div align="center">
 
-# ComfyUI Stand-Alone for Windows with Intel Arc GPU's Only
+# ComfyUI with Flux for Windows with Intel Arc GPU's Only
+
+### I Pre-Installed:
+
+### ComfyUI Manager
+
+### ComfyUI Flux GGUF
+
+### pythongosssss/ComfyUI-Custom-Scripts
+
+----------------------------------------------------------------------------------------------------------------------------------------
 
 **The most powerful and modular diffusion model GUI and backend.**
 
@@ -110,15 +120,17 @@ Ctrl can also be replaced with Cmd instead for macOS users
 
 ## INTEL GPU's
 
-Portable standalone build for Windows with INTEL GPUs Only or CPU only available on the [releases page](https://github.com/Redtash1/ComfyUI-Windows-Intel-GPUs/releases/tag/v0.2.1) or Direct Download Link Below.
+ComfyUI with Flux for Windows with INTEL GPUs or CPU only available on the [releases page](https://github.com/Redtash1/ComfyUI-Windows-Intel-GPUs/releases/tag/v0.2.1) or Direct Download Link Below.
 
 ### Click Here 👉 [Direct link to download ComfyUI Windows Intel GPU Only Portable](https://github.com/Redtash1/ComfyUI-Windows-Intel-GPUs/releases/download/v0.2.1/ComfyUI_Windows_Intel_Portable.zip)
 
 You need to have Git installed, so if you don't already have Git installed, Click here 👉 [Git](https://git-scm.com) to download. To install Git double click Git.exe and just keep clicking next until it's installed.
 
-Once downloaded ComfyUI from link above double click and choose where you would like to unzip ComfyUI to, remember once you start installing stuff you can't move the folder. 
+Once you have downloaded ComfyUI from the link above, double click and choose where you would like to unzip ComfyUI to, remember once you start installing stuff you can't move the folder. 
 
-Now download Models\Checkpoints [Juggernaut XL](https://civitai.com/models/133005/juggernaut-xl). Put this in ComfyUi\models\checkpoints
+### Now download Models\Checkpoints
+
+[Juggernaut XL](https://civitai.com/models/133005/juggernaut-xl). Put this in ComfyUi\models\checkpoints
 
 Now download from comfyanonymous, Flux text encoders [clip_l.safetensors and t5xxl_fp8_e4m3fn.safetensors](https://huggingface.co/comfyanonymous/flux_text_encoders/tree/main). Put these in ComfyUI\models\clip
 
@@ -157,13 +169,13 @@ Now pick if you want to run ComfyUI in Normal, Low VRAM or CPU only mode and dou
 
 ![Run](Pictures/Launch_ComfyUI.png)
 
-I Pre-Installed:
+### I Pre-Installed:
 
-ComfyUI Manager
+### ComfyUI Manager
 
-ComfyUI Flux GGUF
+### ComfyUI Flux GGUF
 
-pythongosssss/ComfyUI-Custom-Scripts
+### pythongosssss/ComfyUI-Custom-Scripts
 
 After you have launched ComfyUI, Drag & Drop Comfy Flux GGUf 4.json from ComfyUI folder onto open browser page to load Flux GGUF workload.
 
