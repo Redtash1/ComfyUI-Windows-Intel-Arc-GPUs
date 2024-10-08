@@ -163,11 +163,11 @@ Now download Vae from [Black Forest Labs](https://huggingface.co/black-forest-la
 
    
 # How to Launch ComfyUI:
-## If you have an INTEL CPU you have to disable the IGPU in device manager under Display Adapters Intel(R) UHD Graphics 770 or ComfyUI will open but when you try to generate an image, it will fail because it will try to use the CPU's built-in graphics with is called IGPU. Once you have disabled it, keep Device Manager window open but minimize it to taskbar to remind you to re-enable it before you shutdown your computer. If disabling IGPU causes display problems re-enable it after you start ComfyUI.
+## If you have an INTEL CPU you have to disable the IGPU in device manager under Display Adapters Intel(R) UHD Graphics 770 or ComfyUI will open but when you try to generate an image, it will fail because it will try to use the CPU's built-in graphics with is called IGPU. Once you have disabled it, keep Device Manager window open but minimize it to taskbar to remind you to re-enable it before you shutdown your computer. If disabling IGPU causes display problems re-enable it after you launch ComfyUI.
 
 ![Disable IGPU](Pictures/Disable_IGPU400x311.png)
 
-Now pick if you want to run ComfyUI in Normal, Low VRAM or CPU only mode and double click to start ComfyUI.
+Now pick if you want to launch ComfyUI in Normal, Low VRAM or CPU only mode and double click to launch ComfyUI.
 
 ![Run](Pictures/Launch_ComfyUI.png)
 
