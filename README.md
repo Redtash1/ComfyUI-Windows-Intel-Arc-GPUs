@@ -132,6 +132,8 @@ Once you have downloaded ComfyUI from the link above, double click and choose wh
 
 [Juggernaut XL](https://civitai.com/models/133005/juggernaut-xl). Put this in ComfyUi\models\checkpoints
 
+![image](Pictures/JuggernautXL.png)
+
 Now download from comfyanonymous, Flux text encoders [clip_l.safetensors and t5xxl_fp8_e4m3fn.safetensors](https://huggingface.co/comfyanonymous/flux_text_encoders/tree/main). Put these in ComfyUI\models\clip
 
 ![image](Pictures/Clips400x332.png)
