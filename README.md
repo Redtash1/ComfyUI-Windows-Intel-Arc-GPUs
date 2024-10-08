@@ -45,7 +45,7 @@
 This ui will let you design and execute advanced stable diffusion pipelines using a graph/nodes/flowchart based interface. For some workflow examples and see what ComfyUI can do you can check out:
 ### [ComfyUI Examples](https://comfyanonymous.github.io/ComfyUI_examples/)
 
-# [Install ComfyUI On Windows With Intel GPU Only](#Installation-On-Windows-With-Intel-GPUs-Only)
+# Click here to jump to Install 👉[Install ComfyUI On Windows With Intel GPU Only](#Installation-On-Windows-With-Intel-GPUs-Only)
 
 ## Features
 - Nodes/graph/flowchart interface to experiment and create complex Stable Diffusion workflows without needing to code anything.
