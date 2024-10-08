@@ -2,7 +2,9 @@ from __future__ import annotations
 
 import os
 import time
+import mimetypes
 import logging
+from typing import Set, List, Dict, Tuple, Literal
 from collections.abc import Collection
 
 supported_pt_extensions: set[str] = {'.ckpt', '.pt', '.bin', '.pth', '.safetensors', '.pkl', '.sft'}
@@ -44,6 +46,40 @@ user_directory = os.path.join(os.path.dirname(os.path.realpath(__file__)), "user
 
 filename_list_cache: dict[str, tuple[list[str], dict[str, float], float]] = {}
 
+class CacheHelper:
+    """
+    Helper class for managing file list cache data.
+    """
+    def __init__(self):
+        self.cache: dict[str, tuple[list[str], dict[str, float], float]] = {}
+        self.active = False
+
+    def get(self, key: str, default=None) -> tuple[list[str], dict[str, float], float]:
+        if not self.active:
+            return default
+        return self.cache.get(key, default)
+    
+    def set(self, key: str, value: tuple[list[str], dict[str, float], float]) -> None:
+        if self.active:
+            self.cache[key] = value
+
+    def clear(self):
+        self.cache.clear()
+
+    def __enter__(self):
+        self.active = True
+        return self
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        self.active = False
+        self.clear()
+
+cache_helper = CacheHelper()
+
+extension_mimetypes_cache = {
+    "webp" : "image",
+}
+
 def map_legacy(folder_name: str) -> str:
     legacy = {"unet": "diffusion_models"}
     return legacy.get(folder_name, folder_name)
@@ -78,6 +114,13 @@ def get_input_directory() -> str:
     global input_directory
     return input_directory
 
+def get_user_directory() -> str:
+    return user_directory
+
+def set_user_directory(user_dir: str) -> None:
+    global user_directory
+    user_directory = user_dir
+
 
 #NOTE: used in http server so don't put folders that should not be accessed remotely
 def get_directory_by_type(type_name: str) -> str | None:
@@ -89,6 +132,28 @@ def get_directory_by_type(type_name: str) -> str | None:
         return get_input_directory()
     return None
 
+def filter_files_content_types(files: List[str], content_types: Literal["image", "video", "audio"]) -> List[str]:
+    """
+    Example:
+        files = os.listdir(folder_paths.get_input_directory())
+        filter_files_content_types(files, ["image", "audio", "video"])
+    """
+    global extension_mimetypes_cache
+    result = []
+    for file in files:
+        extension = file.split('.')[-1]
+        if extension not in extension_mimetypes_cache:
+            mime_type, _ = mimetypes.guess_type(file, strict=False)
+            if not mime_type:
+                continue
+            content_type = mime_type.split('/')[0]
+            extension_mimetypes_cache[extension] = content_type
+        else:
+            content_type = extension_mimetypes_cache[extension]
+
+        if content_type in content_types:
+            result.append(file)
+    return result
 
 # determine base_dir rely on annotation if name is 'filename.ext [annotation]' format
 # otherwise use default_path as base_dir
@@ -130,11 +195,14 @@ def exists_annotated_filepath(name) -> bool:
     return os.path.exists(filepath)
 
 
-def add_model_folder_path(folder_name: str, full_folder_path: str) -> None:
+def add_model_folder_path(folder_name: str, full_folder_path: str, is_default: bool = False) -> None:
     global folder_names_and_paths
     folder_name = map_legacy(folder_name)
     if folder_name in folder_names_and_paths:
-        folder_names_and_paths[folder_name][0].append(full_folder_path)
+        if is_default:
+            folder_names_and_paths[folder_name][0].insert(0, full_folder_path)
+        else:
+            folder_names_and_paths[folder_name][0].append(full_folder_path)
     else:
         folder_names_and_paths[folder_name] = ([full_folder_path], set())
 
@@ -200,6 +268,14 @@ def get_full_path(folder_name: str, filename: str) -> str | None:
 
     return None
 
+
+def get_full_path_or_raise(folder_name: str, filename: str) -> str:
+    full_path = get_full_path(folder_name, filename)
+    if full_path is None:
+        raise FileNotFoundError(f"Model in folder '{folder_name}' with filename '{filename}' not found.")
+    return full_path
+
+
 def get_filename_list_(folder_name: str) -> tuple[list[str], dict[str, float], float]:
     folder_name = map_legacy(folder_name)
     global folder_names_and_paths
@@ -214,6 +290,10 @@ def get_filename_list_(folder_name: str) -> tuple[list[str], dict[str, float], f
     return sorted(list(output_list)), output_folders, time.perf_counter()
 
 def cached_filename_list_(folder_name: str) -> tuple[list[str], dict[str, float], float] | None:
+    strong_cache = cache_helper.get(folder_name)
+    if strong_cache is not None:
+        return strong_cache
+    
     global filename_list_cache
     global folder_names_and_paths
     folder_name = map_legacy(folder_name)
@@ -242,6 +322,7 @@ def get_filename_list(folder_name: str) -> list[str]:
         out = get_filename_list_(folder_name)
         global filename_list_cache
         filename_list_cache[folder_name] = out
+    cache_helper.set(folder_name, out)
     return list(out[0])
 
 def get_save_image_path(filename_prefix: str, output_dir: str, image_width=0, image_height=0) -> tuple[str, str, int, str, str]:
@@ -257,9 +338,17 @@ def get_save_image_path(filename_prefix: str, output_dir: str, image_width=0, im
     def compute_vars(input: str, image_width: int, image_height: int) -> str:
         input = input.replace("%width%", str(image_width))
         input = input.replace("%height%", str(image_height))
+        now = time.localtime()
+        input = input.replace("%year%", str(now.tm_year))
+        input = input.replace("%month%", str(now.tm_mon).zfill(2))
+        input = input.replace("%day%", str(now.tm_mday).zfill(2))
+        input = input.replace("%hour%", str(now.tm_hour).zfill(2))
+        input = input.replace("%minute%", str(now.tm_min).zfill(2))
+        input = input.replace("%second%", str(now.tm_sec).zfill(2))
         return input
 
-    filename_prefix = compute_vars(filename_prefix, image_width, image_height)
+    if "%" in filename_prefix:
+        filename_prefix = compute_vars(filename_prefix, image_width, image_height)
 
     subfolder = os.path.dirname(os.path.normpath(filename_prefix))
     filename = os.path.basename(os.path.normpath(filename_prefix))

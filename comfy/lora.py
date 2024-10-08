@@ -201,9 +201,13 @@ def load_lora(lora, to_load):
 
 def model_lora_keys_clip(model, key_map={}):
     sdk = model.state_dict().keys()
+    for k in sdk:
+        if k.endswith(".weight"):
+            key_map["text_encoders.{}".format(k[:-len(".weight")])] = k #generic lora format without any weird key names
 
     text_model_lora_key = "lora_te_text_model_encoder_layers_{}_{}"
     clip_l_present = False
+    clip_g_present = False
     for b in range(32): #TODO: clean up
         for c in LORA_CLIP_MAP:
             k = "clip_h.transformer.text_model.encoder.layers.{}.{}.weight".format(b, c)
@@ -227,6 +231,7 @@ def model_lora_keys_clip(model, key_map={}):
 
             k = "clip_g.transformer.text_model.encoder.layers.{}.{}.weight".format(b, c)
             if k in sdk:
+                clip_g_present = True
                 if clip_l_present:
                     lora_key = "lora_te2_text_model_encoder_layers_{}_{}".format(b, LORA_CLIP_MAP[c]) #SDXL base
                     key_map[lora_key] = k
@@ -242,10 +247,18 @@ def model_lora_keys_clip(model, key_map={}):
 
     for k in sdk:
         if k.endswith(".weight"):
-            if k.startswith("t5xxl.transformer."):#OneTrainer SD3 lora
+            if k.startswith("t5xxl.transformer."):#OneTrainer SD3 and Flux lora
                 l_key = k[len("t5xxl.transformer."):-len(".weight")]
-                lora_key = "lora_te3_{}".format(l_key.replace(".", "_"))
-                key_map[lora_key] = k
+                t5_index = 1
+                if clip_g_present:
+                    t5_index += 1
+                if clip_l_present:
+                    t5_index += 1
+                    if t5_index == 2:
+                        key_map["lora_te{}_{}".format(t5_index, l_key.replace(".", "_"))] = k #OneTrainer Flux
+                        t5_index += 1
+
+                key_map["lora_te{}_{}".format(t5_index, l_key.replace(".", "_"))] = k
             elif k.startswith("hydit_clip.transformer.bert."): #HunyuanDiT Lora
                 l_key = k[len("hydit_clip.transformer.bert."):-len(".weight")]
                 lora_key = "lora_te1_{}".format(l_key.replace(".", "_"))
@@ -281,6 +294,7 @@ def model_lora_keys_unet(model, key_map={}):
             unet_key = "diffusion_model.{}".format(diffusers_keys[k])
             key_lora = k[:-len(".weight")].replace(".", "_")
             key_map["lora_unet_{}".format(key_lora)] = unet_key
+            key_map["lycoris_{}".format(key_lora)] = unet_key #simpletuner lycoris format
 
             diffusers_lora_prefix = ["", "unet."]
             for p in diffusers_lora_prefix:
@@ -401,7 +415,7 @@ def calculate_weight(patches, weight, key, intermediate_dtype=torch.float32):
             weight *= strength_model
 
         if isinstance(v, list):
-            v = (calculate_weight(v[1:], v[0].clone(), key, intermediate_dtype=intermediate_dtype), )
+            v = (calculate_weight(v[1:], comfy.model_management.cast_to_device(v[0], weight.device, intermediate_dtype, copy=True), key, intermediate_dtype=intermediate_dtype), )
 
         if len(v) == 1:
             patch_type = "diff"
