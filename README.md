@@ -179,7 +179,7 @@ Now pick if you want to launch ComfyUI in Normal, Low VRAM or CPU only mode and 
 
 ### pythongosssss/ComfyUI-Custom-Scripts
 
-After you have launched ComfyUI, Drag & Drop Comfy Flux GGUf 4.json from ComfyUI folder onto open browser page to load Flux GGUF workload.
+After you have launched ComfyUI, Drag & Drop Comfy Flux GGUf 4.json from ComfyUI folder onto open browser page to load Flux GGUF workflow.
 
 ![Drag_and_Drop](Pictures/Drag_&_Drop_GGUF.png)
 
