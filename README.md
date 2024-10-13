@@ -193,7 +193,7 @@ TO EASILY FIX THIS, OPEN COMFYUI MANAGER
 
 THEN CLICK CUSTOM NODES MANAGER
 
-![Custom_Nodes_Manager_Button](Picture/Custom_Nodes_Manager_Button.png)
+![Custom_Nodes_Manager_Button](Pictures/Custom_Nodes_Manager_Button.png)
 
 
 NOW  GO TO TOP LEFT CORNER, CLICK FILTER AND CHANGE TO INSTALLED, THEN GO DOWN TO COMFYUI-GGUF AND CLICK ON TRY FIX
