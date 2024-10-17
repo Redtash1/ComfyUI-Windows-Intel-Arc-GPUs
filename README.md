@@ -151,6 +151,8 @@ Now download Vae from [Black Forest Labs](https://huggingface.co/black-forest-la
 
 ### DISABLE INTEL IGPU BEFORE INSTALLING ANYTHING
 
+If you have an INTEL CPU you have to disable the IGPU in device manager under Display Adapters Intel(R) UHD Graphics 770.
+
 ![Disable IGPU](Pictures/Disable_IGPU400x311.png)
 
 1. Run 1st Intel Driver Install.bat
