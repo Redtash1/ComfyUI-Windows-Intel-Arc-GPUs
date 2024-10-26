@@ -1,5 +1,8 @@
 <div align="center">
 
+# THIS REPOSITORY WILL NOT WORK IF YOU CLONE IT.    IT WILL ONLY WORK IF YOU DOWNLOAD THE FULL PACKAGE FROM THE RELEASES SECTION ABOVE ON THE RIGHT. 
+
+________________________________________________________________
 # ComfyUI with Flux for Windows with Intel Arc GPU's
 
 ### I Pre-Installed:
