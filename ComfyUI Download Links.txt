@@ -1,6 +1,6 @@
 Git              https://git-scm.com/download/win
 
-ComfyUI          https://github.com/comfyanonymous/ComfyUI/releases/download/v0.2.2/ComfyUI_windows_portable_nvidia.7z
+ComfyUI          https://github.com/Redtash1/ComfyUI-Windows-Intel-GPUs/releases/download/v0.2.1/ComfyUI_Windows_Intel.exe
 
 7zip             https://7-zip.org
 
