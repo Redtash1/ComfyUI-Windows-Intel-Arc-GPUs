@@ -21,8 +21,3 @@ Flux GGUF        https://huggingface.co/city96/FLUX.1-schnell-gguf/tree/main
 
 models\vae
 Flux vae         https://huggingface.co/black-forest-labs/FLUX.1-schnell/tree/main
-
-
-Change Manager Layout
-
-Install pythongosssss
