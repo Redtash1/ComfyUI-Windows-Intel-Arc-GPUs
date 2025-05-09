@@ -129,7 +129,7 @@ If you have an INTEL CPU you have to disable the IGPU in device manager under Di
 
 ComfyUI with Flux for Windows with INTEL GPUs or CPU only available on the [releases page](https://github.com/Redtash1/ComfyUI-Windows-Intel-GPUs/releases/tag/v0.2.1) or Direct Download Link Below.
 
-### Click Here 👉 [Direct link to download ComfyUI with Flux on Windows with Intel GPU's](https://github.com/Redtash1/ComfyUI-Windows-Intel-GPUs/releases/download/v0.2.1/ComfyUI_Windows_Intel.exe)
+### Click Here 👉 [Direct link to download ComfyUI with Flux on Windows with Intel GPU's](https://github.com/Redtash1/ComfyUI-Windows-Intel-GPUs/releases/download/v0.2.1/ComfyUI-Windows-Intel-Arc-GPU.exe)
 
 You need to have Git installed, so if you don't already have Git installed, Click here 👉 [Git](https://git-scm.com) to download. To install Git double click Git.exe and just keep clicking next until it's installed.
 
