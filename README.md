@@ -1,6 +1,6 @@
 <div align="center">
 
-# THIS REPOSITORY WILL NOT WORK IF YOU CLONE IT.    IT WILL ONLY WORK IF YOU DOWNLOAD THE FULL VERSION FROM THE [RELEASES SECTION](https://github.com/Redtash1/ComfyUI-Windows-Intel-GPUs/releases/tag/v0.2.1) ABOVE ON THE RIGHT. 👉
+# THIS REPOSITORY WILL NOT WORK IF YOU CLONE IT.    IT WILL ONLY WORK IF YOU DOWNLOAD THE FULL VERSION FROM THE [RELEASES SECTION](https://github.com/Redtash1/ComfyUI-Windows-Intel-Arc-GPUs/releases/tag/v0.2.1) ABOVE ON THE RIGHT. 👉
 
 ________________________________________________________________
 # ComfyUI with Flux for Windows with Intel Arc GPU's
@@ -48,7 +48,7 @@ ________________________________________________________________
 This ui will let you design and execute advanced stable diffusion pipelines using a graph/nodes/flowchart based interface. For some workflow examples and see what ComfyUI can do you can check out:
 ### [ComfyUI Examples](https://comfyanonymous.github.io/ComfyUI_examples/)
 
-# Click here to jump to Install 👉[Install ComfyUI On Windows With Intel GPU Only](#Installation-On-Windows-With-Intel-Arc-GPUs)
+# Click here to jump to Install 👉[Install ComfyUI On Windows With Intel Arc GPU Only](#Installation-On-Windows-With-Intel-Arc-GPUs)
 
 ## Features
 - Nodes/graph/flowchart interface to experiment and create complex Stable Diffusion workflows without needing to code anything.
