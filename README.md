@@ -13,7 +13,16 @@ ________________________________________________________________
 
 ### pythongosssss/ComfyUI-Custom-Scripts
 
+
+
+[![Downloads](https://img.shields.io/github/downloads/Redtash1/ComfyUI-Windows-Intel-Arc-GPUs/total.svg)](https://github.com/Redtash1/https://github.com/Redtash1/ComfyUI-Windows-Intel-Arc-GPUs/releases)
+
+# Click here to jump to Install 👉 [Install ComfyUI On Windows With Intel Arc GPU Only](#Installation-On-Windows-With-Intel-Arc-GPUs) 👈
+
 ----------------------------------------------------------------------------------------------------------------------------------------
+
+
+![ComfyUI Screenshot](comfyui_screenshot.png)
 
 **The most powerful and modular diffusion model GUI and backend.**
 
@@ -41,14 +50,12 @@ ________________________________________________________________
 [github-downloads-shield]: https://img.shields.io/github/downloads/comfyanonymous/ComfyUI/total?style=flat
 [github-downloads-latest-shield]: https://img.shields.io/github/downloads/comfyanonymous/ComfyUI/latest/total?style=flat&label=downloads%40latest
 [github-downloads-link]: https://github.com/comfyanonymous/ComfyUI/releases
-
-![ComfyUI Screenshot](comfyui_screenshot.png)
 </div>
+
 
 This ui will let you design and execute advanced stable diffusion pipelines using a graph/nodes/flowchart based interface. For some workflow examples and see what ComfyUI can do you can check out:
 ### [ComfyUI Examples](https://comfyanonymous.github.io/ComfyUI_examples/)
 
-# Click here to jump to Install 👉[Install ComfyUI On Windows With Intel Arc GPU Only](#Installation-On-Windows-With-Intel-Arc-GPUs)
 
 ## Features
 - Nodes/graph/flowchart interface to experiment and create complex Stable Diffusion workflows without needing to code anything.
